@@ -1,0 +1,80 @@
+/* Newsletter ANEKDOTE — source du 10 septembre 2026, transférée le 29 octobre.
+   Largeur de composition : 640 px. Aucune police ajoutée à la source.
+   Les classes nl-* conservent exactement les déclarations inline du mail. */
+html { background: #eee; }
+body { margin: 0; padding: 0; background: #eee; font-family: Arial, sans-serif; }
+.nl-001 { border-collapse:collapse;color:rgb(23,23,23);background-color:rgb(238,238,238) }
+.nl-002 { font-family:Montserrat,Arial,Helvetica,sans-serif }
+.nl-003 { border-collapse:collapse;width:640px;max-width:640px }
+.nl-004 { padding:17px 16px;font-size:11px;line-height:18px;color:rgb(102,102,102) }
+.nl-005 { color:rgb(102,102,102);text-decoration-line:underline }
+.nl-006 { padding:30px 40px;border-bottom:1px solid rgb(216,216,216) }
+.nl-007 { border-collapse:collapse }
+.nl-008 { color:rgb(23,23,23);text-decoration:none }
+.nl-009 { border:0px;outline:medium;display:block;width:150px;height:auto }
+.nl-010 { font-size:11px;letter-spacing:1.6px;line-height:18px }
+.nl-011 { padding:0px;font-size:0px;line-height:0 }
+.nl-012 { border:0px;outline:medium;display:block;width:640px;max-width:640px;height:auto }
+.nl-013 { background-color:rgb(23,23,23);padding:42px 40px 44px;border-bottom:1px solid rgb(216,216,216) }
+.nl-014 { margin:0px;color:rgb(255,255,255);font-size:11px;line-height:18px;letter-spacing:2px }
+.nl-015 { margin:22px 0px 25px;color:rgb(255,255,255);font-size:44px;line-height:49px;letter-spacing:-1.5px;font-family:Georgia,"Times New Roman",serif;font-weight:400 }
+.nl-016 { font-family:inherit }
+.nl-017 { margin:0px;color:rgb(255,255,255);font-size:15px;line-height:25px;max-width:480px }
+.nl-018 { padding:27px 40px;border-bottom:1px solid rgb(216,216,216) }
+.nl-019 { font-size:12px;letter-spacing:1px }
+.nl-020 { padding:34px 40px 19px }
+.nl-021 { margin:0px;font-size:13px;line-height:20px;letter-spacing:0px;color:rgb(85,85,85) }
+.nl-022 { margin:8px 0px 0px;font-size:13px;line-height:20px;letter-spacing:0px;color:rgb(85,85,85) }
+.nl-023 { margin:5px 0px 0px;font-size:29px;line-height:35px;letter-spacing:-1px;font-family:Georgia,"Times New Roman",serif;font-weight:400 }
+.nl-024 { color:inherit }
+.nl-025 { border:0px;outline:medium;display:block;width:640px;max-width:640px;height:auto;background:0% 0% repeat rgb(222,222,222);font-size:16px }
+.nl-026 { padding:23px 40px 30px;border-bottom:1px solid rgb(221,221,221) }
+.nl-027 { margin:0px;font-size:15px;line-height:25px;color:rgb(74,74,74) }
+.nl-028 { border-collapse:collapse;margin-top:23px;margin-bottom:20px }
+.nl-029 { border-top:1px solid rgb(225,225,225);padding-top:13px }
+.nl-030 { margin:0px;font-size:25px;line-height:32px;letter-spacing:-1px }
+.nl-031 { margin:0px;font-size:12px;line-height:18px;color:rgb(102,102,102) }
+.nl-032 { color:rgb(23,23,23);font-size:14px;line-height:24px }
+.nl-033 { margin:20px 0px;font-size:13px;line-height:20px }
+.nl-034 { padding:46px 40px 40px;border-top:1px solid rgb(227,227,227) }
+.nl-035 { margin:0px 0px 20px;font-family:Georgia,"Times New Roman",serif;font-size:42px;line-height:47px;letter-spacing:-1px;font-weight:400 }
+.nl-036 { margin:0px 0px 18px;font-size:20px;line-height:28px }
+.nl-037 { margin:0px;font-size:15px;line-height:25px }
+.nl-038 { padding:32px 40px 8px }
+.nl-039 { border-collapse:collapse;width:560px;table-layout:fixed }
+.nl-040 { width:268px;padding:0px 12px 24px 0px }
+.nl-041 { border-collapse:collapse;width:268px;height:416px;table-layout:fixed }
+.nl-042 { border-top:1px solid rgb(222,222,222);padding:19px 18px 20px }
+.nl-043 { border-collapse:collapse;width:232px;height:376px;table-layout:fixed }
+.nl-044 { height:32px;padding:0px }
+.nl-045 { margin:0px;font-size:13px;line-height:20px;letter-spacing:1px }
+.nl-046 { color:rgb(119,119,119) }
+.nl-047 { height:56px;padding:0px }
+.nl-048 { margin:0px;font-size:19px;line-height:24px;letter-spacing:-0.5px;font-weight:500 }
+.nl-049 { height:44px;padding:0px }
+.nl-050 { margin:0px;font-size:14px;line-height:20px;letter-spacing:-0.5px }
+.nl-051 { height:200px;padding:0px }
+.nl-052 { margin:0px;font-size:14px;line-height:22px }
+.nl-053 { border-collapse:collapse;border:1px solid rgb(153,153,153);width:232px;height:44px;table-layout:fixed }
+.nl-054 { height:44px }
+.nl-055 { color:rgb(23,23,23);text-decoration:none;display:block;font-size:12px;line-height:18px;padding:12px 10px }
+.nl-056 { width:268px;padding:0px 0px 24px 12px }
+.nl-057 { padding:38px 40px 42px;border-top:1px solid rgb(216,216,216) }
+.nl-058 { margin:10px 0px 13px;font-size:30px;line-height:35px;letter-spacing:-0.6px;font-family:Georgia,"Times New Roman",serif;font-weight:400 }
+.nl-059 { margin:0px 0px 18px;font-size:15px;line-height:24px }
+.nl-060 { background-color:rgb(255,255,255);border:1px solid rgb(119,119,119) }
+.nl-061 { padding:44px 40px 46px;border-top:1px solid rgb(227,227,227) }
+.nl-062 { margin:0px;font-size:11px;line-height:18px;letter-spacing:2px }
+.nl-063 { margin:15px 0px;font-size:34px;line-height:39px;letter-spacing:-1px;font-family:Georgia,"Times New Roman",serif;font-weight:400 }
+.nl-064 { margin:0px 0px 24px;font-size:15px;line-height:25px }
+.nl-065 { padding:16px 23px }
+.nl-066 { color:rgb(23,23,23);font-size:15px;line-height:22px;text-decoration:none;display:inline-block }
+.nl-067 { padding:28px 40px 33px }
+.nl-068 { margin:0px 0px 10px;font-size:16px;letter-spacing:1px }
+.nl-069 { border:0px;outline:medium;display:block;width:116px;height:auto }
+.nl-070 { margin:0px;font-size:12px;line-height:20px;color:rgb(102,102,102) }
+.nl-071 { margin:10px 0px 19px;font-size:12px;line-height:23px }
+.nl-072 { color:rgb(23,23,23) }
+.nl-073 { margin:0px;font-size:11px;line-height:19px;color:rgb(102,102,102) }
+.nl-074 { color:rgb(102,102,102) }
+.nl-075 { height:28px;font-size:0px;line-height:0 }
