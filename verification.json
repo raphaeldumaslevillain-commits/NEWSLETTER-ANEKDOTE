@@ -1,143 +1,188 @@
 {
-  "structure": {
-    "source": "Première newsletter du mail transféré du 29 octobre 2026 à 14:46 (Paris), version corrigée du 10 septembre 2026 à 12:36.",
-    "composition_width_px": 640,
-    "text_and_whitespace_identical": true,
-    "inline_styles_extracted_without_changes": 75,
-    "image_elements": 7,
-    "unique_images": 6,
-    "table_count": 30,
-    "source_newsletter_sha256": "0c5ae9f6e56adce579394f5f8b10a1a8c72092a1b69d4f491ba3898a557102d0",
-    "images": [
-      {
-        "file": "assets/images/anekdote-logo.png",
-        "original": "https://drive.google.com/thumbnail?id=17gc8E9JjAlStHLebIFyJIoDbRmazoZwb&sz=w1000",
-        "sha256": "ac26a3debe85f8554e66e4f09b3af2709d2adc8ad2901f48bc956cfdab5afae8"
-      },
-      {
-        "file": "assets/images/equipe-anekdote.jpg",
-        "original": "Photo intégrée au mail original",
-        "sha256": "9116421ab3f22247a2b3b72e92765336a771ea172dbcc3ec994a79b3f1d43e94"
-      },
-      {
-        "file": "assets/images/ghd-juliette-has-a-gun.png",
-        "original": "https://www.anekdote.fr/wp-content/uploads/2026/06/Copie-de-photo-site-header-1.png",
-        "sha256": "8c9bf8c763835abfbb76e0af49a87958608c7f12828e550661f5cbf584a890d9"
-      },
-      {
-        "file": "assets/images/big-media-cannes.png",
-        "original": "https://www.anekdote.fr/wp-content/uploads/2026/06/Copie-de-photo-site-header.png",
-        "sha256": "7b26e749bae062d33737e2fa1c3dc28390747a4706fbcb864142a9a2b3e6a7ce"
-      },
-      {
-        "file": "assets/images/vincent-nadal-roland-garros.png",
-        "original": "https://www.anekdote.fr/wp-content/uploads/2026/06/Copie-de-photo-site-header-3.png",
-        "sha256": "9103621a5d8012143380f13839fc55413983926ad8193a127933a3ab4e99265b"
-      },
-      {
-        "file": "assets/images/skincarebysamy-yves-rocher.png",
-        "original": "https://www.anekdote.fr/wp-content/uploads/2026/03/photo-site-header-2-1.png",
-        "sha256": "310d415851b3d7217683918b621f6f509744d369578ab45a1aa2ef0a2f6c9b94"
-      }
-    ]
+  "version": "offres-du-moment-2026-11-01",
+  "original_newsletter_text_preserved": true,
+  "offers": [
+    "loges",
+    "cannes",
+    "ardentes",
+    "monaco"
+  ],
+  "fictional_content_labeled": true,
+  "width_px": 640,
+  "desktop_card_width_px": 268,
+  "image_render_size_px": [
+    268,
+    168
+  ],
+  "image_file_size_px": [
+    536,
+    336
+  ],
+  "button_min_height_px": 48,
+  "mobile_single_column_breakpoint_px": 640,
+  "images": 11,
+  "cta_destinations": [
+    "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=loges",
+    "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=cannes",
+    "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=ardentes",
+    "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=monaco"
+  ],
+  "checks": "Original text, balanced tables, asset existence and distinct offer links verified during build.",
+  "sha256": {
+    "index.html": "2bd893f09105b5af661947b96fe87c1c6587b0d22f265b00940dd0a9bce0ddac",
+    "styles.css": "571a93856a7a02ef97f27691a894e8ca7591b24e0d07fd671252404a7e846f44",
+    "newsletter.html": "3a344f828a90c35a856952d6e057824f420fd1885ee0214ce1d38094e65594eb"
   },
-  "rendering": {
-    "viewport": [
-      960,
-      900
-    ],
-    "elements": 343,
-    "identical": true,
-    "images": [
-      {
-        "alt": "Anekdote",
-        "loaded": true,
-        "natural": [
-          1000,
-          322
+  "browser_checks": {
+    "mobile390": {
+      "allImagesLoaded": true,
+      "buttons": [
+        [
+          298,
+          48
         ],
-        "rendered": [
-          150,
-          48.296875
-        ]
-      },
-      {
-        "alt": "Portrait de l’équipe Anekdote en noir et blanc",
-        "loaded": true,
-        "natural": [
-          1500,
-          1086
+        [
+          298,
+          48
         ],
-        "rendered": [
-          640,
-          463.359375
-        ]
-      },
-      {
-        "alt": "Une loge aux couleurs de GHD et Juliette Has a Gun",
-        "loaded": true,
-        "natural": [
-          1440,
-          926
+        [
+          298,
+          48
         ],
-        "rendered": [
-          640,
-          411.5546875
+        [
+          298,
+          48
         ]
-      },
-      {
-        "alt": "Le dîner Big Média au Festival de Cannes",
-        "loaded": true,
-        "natural": [
-          1440,
-          926
+      ],
+      "cards": [
+        [
+          24,
+          176.65625,
+          342,
+          553.3828125
         ],
-        "rendered": [
-          640,
-          411.5546875
-        ]
-      },
-      {
-        "alt": "Vincent Nadal à Roland-Garros",
-        "loaded": true,
-        "natural": [
-          1440,
-          926
+        [
+          24,
+          750.0390625,
+          342,
+          553.3828125
         ],
-        "rendered": [
-          640,
-          411.5546875
-        ]
-      },
-      {
-        "alt": "Samy explore l’univers Yves Rocher",
-        "loaded": true,
-        "natural": [
-          1440,
-          926
+        [
+          24,
+          1323.421875,
+          342,
+          528.3828125
         ],
-        "rendered": [
-          640,
-          411.5546875
+        [
+          24,
+          1871.8046875,
+          342,
+          553.3828125
         ]
-      },
-      {
-        "alt": "Anekdote",
-        "loaded": true,
-        "natural": [
-          1000,
-          322
+      ],
+      "descriptionFont": "16px",
+      "documentWidth": 390,
+      "width": 390
+    },
+    "mobile320": {
+      "allImagesLoaded": true,
+      "buttons": [
+        [
+          228,
+          48
         ],
-        "rendered": [
-          116,
-          37.3515625
+        [
+          228,
+          48
+        ],
+        [
+          228,
+          48
+        ],
+        [
+          228,
+          48
         ]
-      }
-    ],
-    "screenshots_pixel_identical": true,
-    "screenshot_size": [
-      960,
-      7192
-    ]
+      ],
+      "cards": [
+        [
+          24,
+          199.4765625,
+          272,
+          531.5
+        ],
+        [
+          24,
+          750.9765625,
+          272,
+          556.5
+        ],
+        [
+          24,
+          1327.4765625,
+          272,
+          531.5
+        ],
+        [
+          24,
+          1878.9765625,
+          272,
+          556.5
+        ]
+      ],
+      "descriptionFont": "16px",
+      "documentWidth": 320,
+      "width": 320
+    },
+    "desktop960": {
+      "allImagesLoaded": true,
+      "buttons": [
+        [
+          224,
+          48
+        ],
+        [
+          224,
+          48
+        ],
+        [
+          224,
+          48
+        ],
+        [
+          224,
+          48
+        ]
+      ],
+      "cards": [
+        [
+          200,
+          242.15625,
+          268,
+          537
+        ],
+        [
+          492,
+          242.15625,
+          268,
+          537
+        ],
+        [
+          200,
+          803.15625,
+          268,
+          537
+        ],
+        [
+          492,
+          803.15625,
+          268,
+          537
+        ]
+      ],
+      "descriptionFont": "13px",
+      "documentWidth": 960,
+      "width": 960
+    }
   }
 }

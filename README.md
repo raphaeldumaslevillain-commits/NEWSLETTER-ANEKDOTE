@@ -1,32 +1,42 @@
-# Newsletter Anekdote
+# Newsletter Anekdote — Offres du moment
 
-Reproduction du HTML de la newsletter intégrée au mail transféré le 29 octobre 2026 à 14 h 46, reprenant la version corrigée du 10 septembre 2026 à 12 h 36.
+Version de démonstration de la newsletter d’origine, enrichie de quatre offres fictives : **Offres loges, Cannes, Les Ardentes, GP de Monaco**.
 
-## Fichiers
+**Les prestations, volumes et images des quatre offres sont fictifs.** Ils servent à présenter la mise en page. Aucune disponibilité, date, affiliation officielle ou prestation réelle n’est annoncée. Les visuels d’ambiance ont été générés avec ImageGen, puis exportés au format JPEG pour la newsletter.
 
-- `index.html` : newsletter avec les styles dans `styles.css` et les images locales.
-- `styles.css` : les 75 ensembles de déclarations CSS du message, repris sans modification.
-- `newsletter.html` : version email autonome avec les styles intégrés et les images hébergées dans ce dépôt.
-- `assets/images/` : six visuels originaux, dont la photo d’équipe extraite du mail.
-- `verification.json` : résultats des contrôles de fidélité.
+## Voir et modifier
 
-Ouvrir `index.html` dans un navigateur. Aucun outil de compilation ni dépendance n’est nécessaire. Pour une prévisualisation locale, lancer `python3 -m http.server 8000`, puis ouvrir `http://localhost:8000`.
+- [Prévisualisation GitHub Pages](https://raphaeldumaslevillain-commits.github.io/NEWSLETTER-ANEKDOTE/)
+- `index.html` + `styles.css` : édition web, images locales.
+- `newsletter.html` : édition email, styles intégrés et images servies par GitHub Pages.
+- `offers.json` : textes, prestations de démonstration et libellés des boutons.
+- `templates/newsletter-base.html` : newsletter d’origine, isolée des signatures et du fil de discussion.
+- `scripts/build.py` : génération des deux éditions, sans dépendance.
+- `verification.json` : dimensions, liens et contrôles de construction.
+- `assets/offers/image-prompts.json` : prompts des quatre visuels ImageGen.
 
-## Fidélité à la source
+Après une modification : `python3 scripts/build.py`. Pour un aperçu local : `python3 -m http.server 8000`.
 
-La composition d’origine de 640 px est conservée, avec ses textes, espaces, sauts de ligne, liens, images, proportions, tableaux, polices et couleurs. Le HTML de la newsletter est isolé des signatures, des en-têtes de transfert et des anciennes versions citées dans le fil. Aucun contenu rédactionnel n’est réécrit.
+## Placement et conversion
 
-Les styles de la version web sont extraits dans des classes `nl-*`. La version email conserve les styles inline pour éviter de dépendre d’une feuille CSS externe dans la messagerie. Les images locales ont été téléchargées sans transformation ; la photo d’équipe correspond aux octets du fichier intégré au mail.
+Le module se situe **après l’introduction et avant les études de cas**, pour présenter les propositions commerciales avant la partie éditoriale longue. Un raccourci sous l’en-tête permet d’y accéder immédiatement. Ce choix constitue une hypothèse de design à tester ; il n’est pas présenté comme un gain de conversion mesuré.
 
-La source utilise Montserrat avec Arial/Helvetica en secours, et Georgia pour les titres. Aucune police web supplémentaire n’est injectée : le choix de secours reste celui du message original. La composition fixe de 640 px est volontairement conservée sur les petits écrans.
+La grille conserve la composition de 640 px et les marges de 40 px de la newsletter. Sur ordinateur, chaque carte mesure 268 px de large, avec un visuel de 268 × 168 px et un intervalle de 24 px. Les images sont exportées à 536 × 336 px pour les écrans denses. Les boutons HTML contrastés mesurent 48 px de haut et ne dépendent pas du chargement des images.
 
-Les destinations des liens sont reprises telles quelles. La source ne fournit aucune URL pour « Voir cet email dans votre navigateur » et « Se désinscrire » ; son lien Roland-Garros pointe vers `/projets/__trashed/`. Ces éléments restent identiques et devront être renseignés ou validés avant un envoi de campagne.
+À 640 px et en dessous, les cartes s’empilent en une colonne, avec des marges de 24 px, des paragraphes de 16 px et des boutons sur toute la largeur utile de la carte. Le reste de la newsletter s’adapte également pour éviter un défilement horizontal.
 
-## Vérification
+Chaque offre pointe vers le formulaire de contact Anekdote, avec un paramètre `utm_content` distinct. Ces paramètres identifient l’offre dans un outil de mesure compatible ; ils n’installent pas à eux seuls un système de statistiques. Aucun formulaire ni email n’est envoyé automatiquement.
 
-- Textes et espaces identiques au HTML source.
-- 30 tableaux et sept éléments image, correspondant à six fichiers originaux.
-- 343 éléments comparés dans le même navigateur à un viewport de 960 × 900 px : dimensions, typographie, couleurs, bordures, marges et espacements identiques.
-- Captures intégrales de 960 × 7 192 px : comparaison pixel par pixel sans différence entre la source inline et la version avec CSS séparé.
+Références de conception : [boutons HTML et libellés explicites — Mailchimp](https://templates.mailchimp.com/design/calls-to-action/), [lisibilité et boutons sur mobile — Mailchimp](https://templates.mailchimp.com/design/mobile-friendliness/).
 
-La comparaison porte sur les deux versions dans le même navigateur. Le rendu d’un email dépend aussi du logiciel de messagerie et des polices installées.
+## Préservation de l’original
+
+Les textes, chiffres, images originales, proportions, couleurs et familles de polices restent ceux du mail corrigé du 10 septembre 2026, transféré le 29 octobre. Le générateur vérifie que tous les textes de la newsletter d’origine sont préservés. Les deux ajouts sont le raccourci et le module d’offres.
+
+« Voir cet email dans votre navigateur » mène maintenant à GitHub Pages. Le lien de désinscription reste sans destination, comme dans la source ; le lien Roland-Garros conserve `/projets/__trashed/`. Ces deux points devront être renseignés ou validés avant un véritable envoi.
+
+Le rendu d’un email dépend du logiciel de messagerie. Le contrôle navigateur porte sur la version web et sa variante email ; il ne constitue pas un test d’envoi dans tous les clients mail.
+
+## Publication
+
+GitHub Pages utilise la branche `main`, dossier `/ (root)`. Le fichier `.nojekyll` permet de servir directement les fichiers statiques. Aucun processus de compilation n’est requis pour l’hébergement.

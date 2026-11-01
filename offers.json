@@ -1,0 +1,42 @@
+[
+  {
+    "id": "loges",
+    "name": "Offres loges",
+    "category": "CONCERTS & SPORT",
+    "headline": "Votre marque aux premières loges.",
+    "description": "Un espace à vos couleurs, des créateurs invités et une expérience imaginée pour faire parler de votre marque.",
+    "example": "Pack exemple · 12 invités",
+    "cta": "Imaginer ma loge",
+    "alt": "Visuel fictif : une loge privée avec vue sur un concert"
+  },
+  {
+    "id": "cannes",
+    "name": "Cannes",
+    "category": "RENCONTRES & INFLUENCE",
+    "headline": "Faites votre entrée sur la Croisette.",
+    "description": "Un dîner confidentiel, des profils choisis pour vous et une parenthèse Riviera pour créer les bonnes connexions.",
+    "example": "Pack exemple · 20 invités",
+    "cta": "Recevoir l’offre Cannes",
+    "alt": "Visuel fictif : un escalier événementiel face à la Riviera"
+  },
+  {
+    "id": "ardentes",
+    "name": "Les Ardentes",
+    "category": "MUSIQUE & COMMUNAUTÉS",
+    "headline": "Faites vibrer votre communauté.",
+    "description": "Un espace de marque, un casting de créateurs et des contenus au plus près de l’énergie du festival.",
+    "example": "Pack exemple · 6 créateurs",
+    "cta": "Activer Les Ardentes",
+    "alt": "Visuel fictif : une foule devant une scène de festival"
+  },
+  {
+    "id": "monaco",
+    "name": "GP de Monaco",
+    "category": "SPORT & HOSPITALITÉ",
+    "headline": "Prenez une longueur d’avance.",
+    "description": "Une terrasse avec vue, vos partenaires réunis et un programme d’hospitalité pensé autour de votre marque.",
+    "example": "Pack exemple · 10 invités",
+    "cta": "Recevoir l’offre Monaco",
+    "alt": "Visuel fictif : une terrasse surplombant un circuit en bord de mer"
+  }
+]

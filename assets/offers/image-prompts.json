@@ -1,0 +1,26 @@
+{
+  "mode": "Built-in ImageGen",
+  "fictional": true,
+  "assets": [
+    {
+      "id": "loges",
+      "file": "offre-loges.jpg",
+      "prompt": "Private hospitality box overlooking a concert stadium at dusk. Empty black seats, refined counter with sparkling-water glasses, stage and audience beyond. Black and white architectural editorial photograph, subtle grain, no logos or text."
+    },
+    {
+      "id": "cannes",
+      "file": "offre-cannes.jpg",
+      "prompt": "Fictional Cannes-style Riviera hospitality evening. Grand staircase, velvet ropes, palm trees, seaside hotel. Black and white premium editorial photograph, no festival logos, celebrities or text."
+    },
+    {
+      "id": "ardentes",
+      "file": "offre-ardentes.jpg",
+      "prompt": "Fictional outdoor hip-hop festival at night. Raised hands, stage beams and smoke. Black and white editorial photograph, no artist likeness, logos or text."
+    },
+    {
+      "id": "monaco",
+      "file": "offre-monaco.jpg",
+      "prompt": "Fictional Monaco-style racing hospitality. Terrace above waterfront circuit, an unbranded open-wheel car, yachts and hillside buildings. Black and white editorial photograph, no sponsors or text."
+    }
+  ]
+}
