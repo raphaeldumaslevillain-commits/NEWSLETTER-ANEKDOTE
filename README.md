@@ -19,7 +19,7 @@ Après une modification : `python3 scripts/build.py`. Pour un aperçu local : `p
 
 ## Placement et conversion
 
-Le module se situe **après l’introduction et avant les études de cas**, pour présenter les propositions commerciales avant la partie éditoriale longue. Un raccourci sous l’en-tête permet d’y accéder immédiatement. Ce choix constitue une hypothèse de design à tester ; il n’est pas présenté comme un gain de conversion mesuré.
+Le module se situe **après l’introduction et avant les études de cas**, pour présenter les propositions commerciales avant la partie éditoriale longue. Ce choix constitue une hypothèse de design à tester ; il n’est pas présenté comme un gain de conversion mesuré.
 
 La grille conserve la composition de 640 px et les marges de 40 px de la newsletter. Sur ordinateur, chaque carte mesure 268 px de large, avec un visuel de 268 × 168 px et un intervalle de 24 px. Les images sont exportées à 536 × 336 px pour les écrans denses. Les boutons HTML contrastés mesurent 48 px de haut et ne dépendent pas du chargement des images.
 
@@ -31,7 +31,7 @@ Références de conception : [boutons HTML et libellés explicites — Mailchimp
 
 ## Préservation de l’original
 
-Les textes, chiffres, images originales, proportions, couleurs et familles de polices restent ceux du mail corrigé du 10 septembre 2026, transféré le 29 octobre. Le générateur vérifie que tous les textes de la newsletter d’origine sont préservés. Les deux ajouts sont le raccourci et le module d’offres.
+Les textes, chiffres, images originales, proportions, couleurs et familles de polices restent ceux du mail corrigé du 10 septembre 2026, transféré le 29 octobre. Le générateur vérifie que tous les textes de la newsletter d’origine sont préservés. Le module d’offres et le bandeau « EN CE MOMENT » complètent la newsletter.
 
 « Voir cet email dans votre navigateur » mène maintenant à GitHub Pages. Le lien de désinscription reste sans destination, comme dans la source ; le lien Roland-Garros conserve `/projets/__trashed/`. Ces deux points devront être renseignés ou validés avant un véritable envoi.
 

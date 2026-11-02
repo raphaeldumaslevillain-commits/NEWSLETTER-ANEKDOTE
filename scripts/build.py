@@ -47,14 +47,13 @@ def offers_section():
 <p style="margin:0 0 14px;font-size:10px;line-height:17px;letter-spacing:1.8px;color:#555555">LES OFFRES DU MOMENT</p>
 <h2 class="offers-title" style="margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:38px;line-height:42px;font-weight:400;letter-spacing:-1px">Votre marque.<br>Au bon endroit.</h2>
 <p style="margin:0 0 12px;font-size:14px;line-height:23px;color:#4a4a4a">Quatre temps forts pour créer la rencontre.<br>Choisissez le vôtre, on imagine la suite ensemble.</p>
-<p style="margin:0 0 28px;font-size:9px;line-height:15px;letter-spacing:0.5px;color:#686868">MAQUETTE · OFFRES ET VISUELS FICTIFS</p>
 <table role="presentation" class="offer-grid" width="560" cellpadding="0" cellspacing="0" style="width:560px;border-collapse:collapse;table-layout:fixed"><tbody>''' + ''.join(rows) + '''</tbody></table>
 <p style="margin:0 0 10px;font-size:12px;line-height:20px;color:#555555">Une autre idée en tête ? <a href="https://www.anekdote.fr/contact/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=offres-du-moment-demo&amp;utm_content=sur-mesure" target="_blank" style="color:#171717;text-decoration:underline">Parlons de votre projet ↗</a></p>
 </td></tr>
 <!-- OFFERS:END -->'''
 
 
-TEASER = '''<!-- OFFERS-TEASER:BEGIN --><tr><td class="email-pad" bgcolor="#171717" style="padding:14px 40px;background-color:#171717"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-size:10px;line-height:18px;letter-spacing:1.1px;color:#ffffff">EN CE MOMENT</td><td align="right" style="font-size:12px;line-height:18px"><a href="#offres-du-moment" style="display:inline-block;padding:8px 0;color:#ffffff;text-decoration:none">Découvrir nos 4 offres&nbsp; ↗</a></td></tr></tbody></table></td></tr><!-- OFFERS-TEASER:END -->'''
+TEASER = '''<!-- OFFERS-TEASER:BEGIN --><tr><td class="email-pad" bgcolor="#171717" style="padding:14px 40px;background-color:#171717"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-size:10px;line-height:18px;letter-spacing:1.1px;color:#ffffff">EN CE MOMENT</td></tr></tbody></table></td></tr><!-- OFFERS-TEASER:END -->'''
 
 
 def add_mobile_classes(match):
@@ -133,7 +132,7 @@ styled = re.sub(r'<[a-zA-Z][^>]*>', extract_style, body)
 
 def document(markup, email=False):
     head = '<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Anekdote — Les offres du moment</title>\n<meta name="description" content="Maquette de newsletter Anekdote : loges, Cannes, Les Ardentes et GP de Monaco. Offres et visuels fictifs.">\n'
-    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=offres-20261101">\n'
+    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=offres-20261102">\n'
     return head + '</head>\n<body style="margin:0;padding:0;background-color:#eeeeee;font-family:Arial,sans-serif">\n' + markup + '\n</body>\n</html>\n'
 
 
@@ -168,10 +167,10 @@ assert len(re.findall(r'<table\b', body)) == len(re.findall(r'</table>', body))
 assert all((ROOT / ('assets/offers/offre-' + o['id'] + '.jpg')).is_file() for o in OFFERS)
 assert len({contact(o) for o in OFFERS}) == 4
 report = {
-    'version': 'offres-du-moment-2026-11-01',
+    'version': 'offres-du-moment-2026-11-02',
     'original_newsletter_text_preserved': True,
     'offers': [o['id'] for o in OFFERS],
-    'fictional_content_labeled': True,
+    'fictional_content_labeled': False,
     'width_px': 640,
     'desktop_card_width_px': 268,
     'image_render_size_px': [268, 168],

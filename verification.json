@@ -1,5 +1,5 @@
 {
-  "version": "offres-du-moment-2026-11-01",
+  "version": "offres-du-moment-2026-11-02",
   "original_newsletter_text_preserved": true,
   "offers": [
     "loges",
@@ -7,7 +7,7 @@
     "ardentes",
     "monaco"
   ],
-  "fictional_content_labeled": true,
+  "fictional_content_labeled": false,
   "width_px": 640,
   "desktop_card_width_px": 268,
   "image_render_size_px": [
@@ -29,160 +29,8 @@
   ],
   "checks": "Original text, balanced tables, asset existence and distinct offer links verified during build.",
   "sha256": {
-    "index.html": "2bd893f09105b5af661947b96fe87c1c6587b0d22f265b00940dd0a9bce0ddac",
-    "styles.css": "571a93856a7a02ef97f27691a894e8ca7591b24e0d07fd671252404a7e846f44",
-    "newsletter.html": "3a344f828a90c35a856952d6e057824f420fd1885ee0214ce1d38094e65594eb"
-  },
-  "browser_checks": {
-    "mobile390": {
-      "allImagesLoaded": true,
-      "buttons": [
-        [
-          298,
-          48
-        ],
-        [
-          298,
-          48
-        ],
-        [
-          298,
-          48
-        ],
-        [
-          298,
-          48
-        ]
-      ],
-      "cards": [
-        [
-          24,
-          176.65625,
-          342,
-          553.3828125
-        ],
-        [
-          24,
-          750.0390625,
-          342,
-          553.3828125
-        ],
-        [
-          24,
-          1323.421875,
-          342,
-          528.3828125
-        ],
-        [
-          24,
-          1871.8046875,
-          342,
-          553.3828125
-        ]
-      ],
-      "descriptionFont": "16px",
-      "documentWidth": 390,
-      "width": 390
-    },
-    "mobile320": {
-      "allImagesLoaded": true,
-      "buttons": [
-        [
-          228,
-          48
-        ],
-        [
-          228,
-          48
-        ],
-        [
-          228,
-          48
-        ],
-        [
-          228,
-          48
-        ]
-      ],
-      "cards": [
-        [
-          24,
-          199.4765625,
-          272,
-          531.5
-        ],
-        [
-          24,
-          750.9765625,
-          272,
-          556.5
-        ],
-        [
-          24,
-          1327.4765625,
-          272,
-          531.5
-        ],
-        [
-          24,
-          1878.9765625,
-          272,
-          556.5
-        ]
-      ],
-      "descriptionFont": "16px",
-      "documentWidth": 320,
-      "width": 320
-    },
-    "desktop960": {
-      "allImagesLoaded": true,
-      "buttons": [
-        [
-          224,
-          48
-        ],
-        [
-          224,
-          48
-        ],
-        [
-          224,
-          48
-        ],
-        [
-          224,
-          48
-        ]
-      ],
-      "cards": [
-        [
-          200,
-          242.15625,
-          268,
-          537
-        ],
-        [
-          492,
-          242.15625,
-          268,
-          537
-        ],
-        [
-          200,
-          803.15625,
-          268,
-          537
-        ],
-        [
-          492,
-          803.15625,
-          268,
-          537
-        ]
-      ],
-      "descriptionFont": "13px",
-      "documentWidth": 960,
-      "width": 960
-    }
+    "index.html": "5797a8f38f4b4bc8e9579b0dcc42379af2a598e2e7615d5e177b8614fa5c8337",
+    "styles.css": "bfae0dfc258d35b067425173ac15f5291cf24cf828a370bee841135579a784c1",
+    "newsletter.html": "e393b95a144d8c8c2b2c15ac947c351a6ce57117ea6db98e83307dbdb1940bde"
   }
 }
