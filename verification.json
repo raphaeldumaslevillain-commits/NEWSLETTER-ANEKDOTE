@@ -1,6 +1,16 @@
 {
-  "version": "offres-du-moment-2026-11-02",
-  "original_newsletter_text_preserved": true,
+  "version": "retours-editoriaux-2026-11-02",
+  "approved_editorial_text_preserved": true,
+  "original_case_studies_preserved": true,
+  "expertises_count": 6,
+  "reading_order": [
+    "case-studies",
+    "expertises",
+    "offers",
+    "conclusion"
+  ],
+  "offer_images": "full-color",
+  "fixed_guest_counts": false,
   "offers": [
     "loges",
     "cannes",
@@ -27,10 +37,10 @@
     "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=ardentes",
     "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=monaco"
   ],
-  "checks": "Original text, balanced tables, asset existence and distinct offer links verified during build.",
+  "checks": "Approved editorial text, reading order, six expertises, balanced tables, assets and distinct offer links verified during build.",
   "sha256": {
-    "index.html": "5797a8f38f4b4bc8e9579b0dcc42379af2a598e2e7615d5e177b8614fa5c8337",
-    "styles.css": "bfae0dfc258d35b067425173ac15f5291cf24cf828a370bee841135579a784c1",
-    "newsletter.html": "e393b95a144d8c8c2b2c15ac947c351a6ce57117ea6db98e83307dbdb1940bde"
+    "index.html": "8da76fe9cf73f19bccf3fa025823d0a8b94df3d53e460ba33ad58405d9ecc23c",
+    "styles.css": "1f04d05ed6c0f08a73b187e48bf777a62a022f05fc39bcbecf6ed7b8c6d0eff4",
+    "newsletter.html": "84d185fc73d38a2087660699a8fe69d816f75022fa330a9a234f88a21da8b93b"
   }
 }

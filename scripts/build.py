@@ -1,4 +1,4 @@
-"""Build the browser and email editions using the original newsletter template.
+"""Build the browser and email editions using the approved editorial newsletter template.
 
 Run from any directory: python3 scripts/build.py. No third-party dependency.
 """
@@ -27,10 +27,10 @@ def card(offer):
     url = escape(contact(offer), quote=True)
     text = {k: escape(v) for k, v in offer.items()}
     return f'''<table role="presentation" class="offer-card" width="268" cellpadding="0" cellspacing="0" style="width:268px;border-collapse:collapse;table-layout:fixed;background-color:#ffffff">
-<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}" target="_blank" style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
+<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}" target="_blank" style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg?v=couleur-20261102" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
 <tr><td class="offer-copy" style="padding:22px 22px 0"><p style="margin:0 0 10px;font-size:9px;line-height:15px;letter-spacing:1.3px;color:#686868">{text['category']}</p><h3 style="margin:0 0 9px;font-size:22px;line-height:28px;letter-spacing:-0.6px;font-weight:400;font-family:Georgia,'Times New Roman',serif">{text['name']}</h3><p class="offer-headline" style="margin:0;font-size:15px;line-height:22px;min-height:44px;font-weight:600;letter-spacing:-0.3px">{text['headline']}</p></td></tr>
-<tr><td class="offer-description" height="112" valign="top" style="height:112px;padding:12px 22px 0;vertical-align:top"><p style="margin:0;font-size:13px;line-height:21px;color:#555555">{text['description']}</p></td></tr>
-<tr><td class="offer-copy" style="padding:15px 22px 14px"><p style="margin:0;font-size:10px;line-height:16px;letter-spacing:0.2px;color:#686868">{text['example']}</p></td></tr>
+<tr><td class="offer-description" height="147" valign="top" style="height:147px;padding:12px 22px 0;vertical-align:top"><p style="margin:0;font-size:13px;line-height:21px;color:#555555">{text['description']}</p></td></tr>
+<tr><td class="offer-copy" style="padding:15px 22px 14px"><p style="margin:0;font-size:10px;line-height:16px;letter-spacing:0.2px;color:#686868">{text['format']}</p></td></tr>
 <tr><td class="offer-button-pad" style="padding:0 22px 24px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%"><tbody><tr><td align="center" bgcolor="#171717" height="48" style="height:48px;background-color:#171717"><a class="offer-cta" href="{url}" target="_blank" style="display:block;padding:15px 8px;color:#ffffff;background-color:#171717;text-decoration:none;text-align:center;font-size:11px;line-height:18px;font-weight:500">{text['cta']} <span aria-hidden="true">↗</span></a></td></tr></tbody></table></td></tr></tbody></table>'''
 
 
@@ -46,7 +46,7 @@ def offers_section():
 <tr><td id="offres-du-moment" class="offers-section email-pad" bgcolor="#f2f1ee" style="padding:40px 40px 20px;background-color:#f2f1ee;border-bottom:1px solid #d8d8d8;scroll-margin-top:20px">
 <p style="margin:0 0 14px;font-size:10px;line-height:17px;letter-spacing:1.8px;color:#555555">LES OFFRES DU MOMENT</p>
 <h2 class="offers-title" style="margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:38px;line-height:42px;font-weight:400;letter-spacing:-1px">Votre marque.<br>Au bon endroit.</h2>
-<p style="margin:0 0 12px;font-size:14px;line-height:23px;color:#4a4a4a">Quatre temps forts pour créer la rencontre.<br>Choisissez le vôtre, on imagine la suite ensemble.</p>
+<p style="margin:0 0 28px;font-size:14px;line-height:23px;color:#4a4a4a">Quatre temps forts pour créer la rencontre.<br>Choisissez le vôtre, on imagine la suite ensemble.</p>
 <table role="presentation" class="offer-grid" width="560" cellpadding="0" cellspacing="0" style="width:560px;border-collapse:collapse;table-layout:fixed"><tbody>''' + ''.join(rows) + '''</tbody></table>
 <p style="margin:0 0 10px;font-size:12px;line-height:20px;color:#555555">Une autre idée en tête ? <a href="https://www.anekdote.fr/contact/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=offres-du-moment-demo&amp;utm_content=sur-mesure" target="_blank" style="color:#171717;text-decoration:underline">Parlons de votre projet ↗</a></p>
 </td></tr>
@@ -83,7 +83,7 @@ body = re.sub(r'<[a-zA-Z][^>]*>', add_mobile_classes, BASE)
 photo_marker = '<tr><td bgcolor="#4a4a4a"'
 assert body.count(photo_marker) == 1
 body = body.replace(photo_marker, TEASER + photo_marker, 1)
-section_marker = '<tr><td style="padding:27px 40px;'
+section_marker = '<tr><td bgcolor="#ffffff" style="padding:44px 40px 46px;'
 # A mobile class may have been appended, but attribute order is unchanged.
 assert body.count(section_marker) == 1
 body = body.replace(section_marker, offers_section() + section_marker, 1)
@@ -97,6 +97,10 @@ a:focus-visible { outline: 2px solid #777; outline-offset: 4px; }
   .email-pad { padding-left:24px !important; padding-right:24px !important; }
   .email-fluid, .offer-grid { width:100% !important; max-width:100% !important; }
   .service-column { display:block !important; width:100% !important; padding-left:0 !important; padding-right:0 !important; }
+  .service-column table[height], .service-column td[height] { height:auto !important; }
+  .service-column td[height="32"] { padding-bottom:16px !important; }
+  .service-column td[height="56"] { padding-bottom:12px !important; }
+  .service-column td[height="200"] { padding-top:12px !important; padding-bottom:20px !important; }
   .offer-column { display:block !important; width:100% !important; padding-bottom:20px !important; }
   .offer-gap { display:none !important; }
   .offer-card { width:100% !important; }
@@ -132,7 +136,7 @@ styled = re.sub(r'<[a-zA-Z][^>]*>', extract_style, body)
 
 def document(markup, email=False):
     head = '<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Anekdote — Les offres du moment</title>\n<meta name="description" content="Maquette de newsletter Anekdote : loges, Cannes, Les Ardentes et GP de Monaco. Offres et visuels fictifs.">\n'
-    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=offres-20261102">\n'
+    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=retours-20261102">\n'
     return head + '</head>\n<body style="margin:0;padding:0;background-color:#eeeeee;font-family:Arial,sans-serif">\n' + markup + '\n</body>\n</html>\n'
 
 
@@ -145,7 +149,7 @@ email_body = email_body.replace('href="#offres-du-moment"', 'href="' + PUBLIC + 
 (ROOT / 'newsletter.html').write_text(document(email_body, email=True))
 (ROOT / '.nojekyll').write_text('')
 
-# Confirm that the old newsletter's visible text survives the insertion verbatim.
+# Confirm that inserting the offer module preserves the approved editorial template.
 class Text(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -161,14 +165,25 @@ def text(markup):
 
 
 without_new = re.sub(r'<!-- OFFERS(?:-TEASER)?:BEGIN -->.*?<!-- OFFERS(?:-TEASER)?:END -->', '', body, flags=re.S)
-assert text(without_new) == text(BASE), 'Original newsletter text changed'
+assert text(without_new) == text(BASE), 'Approved editorial text changed'
 assert len(re.findall(r'<img\b', body)) == 11
 assert len(re.findall(r'<table\b', body)) == len(re.findall(r'</table>', body))
 assert all((ROOT / ('assets/offers/offre-' + o['id'] + '.jpg')).is_file() for o in OFFERS)
 assert len({contact(o) for o in OFFERS}) == 4
+assert body.index('GHD × Juliette Has a Gun') < body.index('Et pour<br>votre marque ?') < body.index('id="offres-du-moment"') < body.index('LA SUITE, AVEC VOUS')
+assert 'sept offres' not in body and 'nos six offres' in body
+assert 'L’OFFRE LOGE' not in body and 'Pack exemple' not in body
+assert body.count('Votre marque aux premières loges.') == 1
+assert 'Nous serions ravis' in body and 'Nous serons ravis' not in body
+
 report = {
-    'version': 'offres-du-moment-2026-11-02',
-    'original_newsletter_text_preserved': True,
+    'version': 'retours-editoriaux-2026-11-02',
+    'approved_editorial_text_preserved': True,
+    'original_case_studies_preserved': True,
+    'expertises_count': 6,
+    'reading_order': ['case-studies', 'expertises', 'offers', 'conclusion'],
+    'offer_images': 'full-color',
+    'fixed_guest_counts': False,
     'offers': [o['id'] for o in OFFERS],
     'fictional_content_labeled': False,
     'width_px': 640,
@@ -179,8 +194,8 @@ report = {
     'mobile_single_column_breakpoint_px': 640,
     'images': 11,
     'cta_destinations': [contact(o) for o in OFFERS],
-    'checks': 'Original text, balanced tables, asset existence and distinct offer links verified during build.',
+    'checks': 'Approved editorial text, reading order, six expertises, balanced tables, assets and distinct offer links verified during build.',
     'sha256': {f: hashlib.sha256((ROOT / f).read_bytes()).hexdigest() for f in ('index.html', 'styles.css', 'newsletter.html')},
 }
 (ROOT / 'verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
-print(json.dumps({'build': 'OK', 'offers': len(OFFERS), 'original_text_preserved': True, 'styles': len(rules)}, ensure_ascii=False))
+print(json.dumps({'build': 'OK', 'offers': len(OFFERS), 'approved_editorial_text_preserved': True, 'styles': len(rules)}, ensure_ascii=False))

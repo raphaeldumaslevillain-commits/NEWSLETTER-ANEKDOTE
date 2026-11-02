@@ -5,19 +5,19 @@
     "category": "CONCERTS & SPORT",
     "headline": "Votre marque aux premières loges.",
     "description": "Un espace à vos couleurs, des créateurs invités et une expérience imaginée pour faire parler de votre marque.",
-    "example": "Pack exemple · 12 invités",
     "cta": "Imaginer ma loge",
-    "alt": "Visuel fictif : une loge privée avec vue sur un concert"
+    "alt": "Visuel fictif : une loge privée avec vue sur un concert",
+    "format": "Format sur mesure"
   },
   {
     "id": "cannes",
     "name": "Cannes",
     "category": "RENCONTRES & INFLUENCE",
     "headline": "Faites votre entrée sur la Croisette.",
-    "description": "Un dîner confidentiel, des profils choisis pour vous et une parenthèse Riviera pour créer les bonnes connexions.",
-    "example": "Pack exemple · 20 invités",
+    "description": "Au Festival international du film de Cannes, imaginons votre activation d’influence : dîner, soirée ou expérience autour des montées des marches, avec un casting sur mesure.",
     "cta": "Recevoir l’offre Cannes",
-    "alt": "Visuel fictif : un escalier événementiel face à la Riviera"
+    "alt": "Visuel fictif : un escalier événementiel face à la Riviera",
+    "format": "Format sur mesure"
   },
   {
     "id": "ardentes",
@@ -25,9 +25,9 @@
     "category": "MUSIQUE & COMMUNAUTÉS",
     "headline": "Faites vibrer votre communauté.",
     "description": "Un espace de marque, un casting de créateurs et des contenus au plus près de l’énergie du festival.",
-    "example": "Pack exemple · 6 créateurs",
     "cta": "Activer Les Ardentes",
-    "alt": "Visuel fictif : une foule devant une scène de festival"
+    "alt": "Visuel fictif : une foule devant une scène de festival",
+    "format": "Format sur mesure"
   },
   {
     "id": "monaco",
@@ -35,8 +35,8 @@
     "category": "SPORT & HOSPITALITÉ",
     "headline": "Prenez une longueur d’avance.",
     "description": "Une terrasse avec vue, vos partenaires réunis et un programme d’hospitalité pensé autour de votre marque.",
-    "example": "Pack exemple · 10 invités",
     "cta": "Recevoir l’offre Monaco",
-    "alt": "Visuel fictif : une terrasse surplombant un circuit en bord de mer"
+    "alt": "Visuel fictif : une terrasse surplombant un circuit en bord de mer",
+    "format": "Format sur mesure"
   }
 ]
