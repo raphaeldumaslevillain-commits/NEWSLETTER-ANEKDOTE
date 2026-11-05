@@ -5,7 +5,7 @@ Run from any directory: python3 scripts/build.py. No third-party dependency.
 from pathlib import Path
 from html import escape, unescape
 from html.parser import HTMLParser
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
 import hashlib
 import json
 import re
@@ -17,6 +17,9 @@ BASE = (ROOT / 'templates/newsletter-base.html').read_text().strip()
 
 
 def contact(offer):
+    if offer['id'] in {'cannes', 'monaco'}:
+        subject = quote('Offre ' + offer['name'])
+        return 'mailto:Christelle.egron@dbmgroup.fr?subject=' + subject
     return 'https://www.anekdote.fr/contact/?' + urlencode({
         'utm_source': 'newsletter', 'utm_medium': 'email',
         'utm_campaign': 'offres-du-moment-demo', 'utm_content': offer['id'],
@@ -24,14 +27,16 @@ def contact(offer):
 
 
 def card(offer):
-    url = escape(contact(offer), quote=True)
+    destination = contact(offer)
+    url = escape(destination, quote=True)
+    target = '' if destination.startswith('mailto:') else ' target="_blank"'
     text = {k: escape(v) for k, v in offer.items()}
     return f'''<table role="presentation" class="offer-card" width="268" cellpadding="0" cellspacing="0" style="width:268px;border-collapse:collapse;table-layout:fixed;background-color:#ffffff">
-<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}" target="_blank" style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg?v=selection-20261105" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
+<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}"{target} style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg?v=selection-20261105" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
 <tr><td class="offer-copy" style="padding:22px 22px 0"><p style="margin:0 0 10px;font-size:9px;line-height:15px;letter-spacing:1.3px;color:#686868">{text['category']}</p><h3 style="margin:0 0 9px;font-size:22px;line-height:28px;letter-spacing:-0.6px;font-weight:400;font-family:Georgia,'Times New Roman',serif">{text['name']}</h3><p class="offer-headline" style="margin:0;font-size:15px;line-height:22px;min-height:44px;font-weight:600;letter-spacing:-0.3px">{text['headline']}</p></td></tr>
 <tr><td class="offer-description" height="147" valign="top" style="height:147px;padding:12px 22px 0;vertical-align:top"><p style="margin:0;font-size:13px;line-height:21px;color:#555555">{text['description']}</p></td></tr>
 <tr><td class="offer-copy" style="padding:15px 22px 14px"><p style="margin:0;font-size:10px;line-height:16px;letter-spacing:0.2px;color:#686868">{text['format']}</p></td></tr>
-<tr><td class="offer-button-pad" style="padding:0 22px 24px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%"><tbody><tr><td align="center" bgcolor="#171717" height="48" style="height:48px;background-color:#171717"><a class="offer-cta" href="{url}" target="_blank" style="display:block;padding:15px 8px;color:#ffffff;background-color:#171717;text-decoration:none;text-align:center;font-size:11px;line-height:18px;font-weight:500">{text['cta']} <span aria-hidden="true">↗</span></a></td></tr></tbody></table></td></tr></tbody></table>'''
+<tr><td class="offer-button-pad" style="padding:0 22px 24px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%"><tbody><tr><td align="center" bgcolor="#171717" height="48" style="height:48px;background-color:#171717"><a class="offer-cta" href="{url}"{target} style="display:block;padding:15px 8px;color:#ffffff;background-color:#171717;text-decoration:none;text-align:center;font-size:11px;line-height:18px;font-weight:500">{text['cta']} <span aria-hidden="true">↗</span></a></td></tr></tbody></table></td></tr></tbody></table>'''
 
 
 def offers_section():

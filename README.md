@@ -24,7 +24,7 @@ La grille conserve la composition de 640 px et les marges de 40 px de la newslet
 
 À 640 px et en dessous, les cartes s’empilent en une colonne, avec des marges de 24 px, des paragraphes de 16 px et des boutons sur toute la largeur utile de la carte. Le reste de la newsletter s’adapte également pour éviter un défilement horizontal.
 
-Chaque offre pointe vers le formulaire de contact Anekdote, avec un paramètre `utm_content` distinct. Ces paramètres identifient l’offre dans un outil de mesure compatible ; ils n’installent pas à eux seuls un système de statistiques. Aucun formulaire ni email n’est envoyé automatiquement.
+Cannes et le GP de Monaco ouvrent un e-mail à Christelle Egron avec l’objet de l’offre. Les loges et Les Ardentes pointent vers le formulaire de contact Anekdote, avec un paramètre `utm_content` distinct. Ces paramètres identifient l’offre dans un outil de mesure compatible ; ils n’installent pas à eux seuls un système de statistiques. Aucun formulaire ni email n’est envoyé automatiquement.
 
 Références de conception : [boutons HTML et libellés explicites — Mailchimp](https://templates.mailchimp.com/design/calls-to-action/), [lisibilité et boutons sur mobile — Mailchimp](https://templates.mailchimp.com/design/mobile-friendliness/).
 

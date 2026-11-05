@@ -34,14 +34,14 @@
   "images": 14,
   "cta_destinations": [
     "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=loges",
-    "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=cannes",
+    "mailto:Christelle.egron@dbmgroup.fr?subject=Offre%20Cannes",
     "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=ardentes",
-    "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=monaco"
+    "mailto:Christelle.egron@dbmgroup.fr?subject=Offre%20GP%20de%20Monaco"
   ],
   "checks": "Approved editorial text, reading order, five case studies, seven expertises, booking link, balanced tables, assets and distinct offer links verified during build.",
   "sha256": {
-    "index.html": "020273a76bd834820eed0fdba31de78ae6490fbe19111496c8b8f06578743c64",
+    "index.html": "7627f871e779f75a11e9bab5234648219151c902a47d4ef4a377d94da64330b4",
     "styles.css": "f13138c16daea590fca799413544d596427e157ed63465e12f3d330e8d03e607",
-    "newsletter.html": "ca624bc00881cdb8dd6d5a027854e2b98a95b0faa61d10d4e73b9c4918b6145f"
+    "newsletter.html": "faf3af768092f3b948c5f018aa325ecd1954046bf047992ed09b311bccfa8b99"
   }
 }
