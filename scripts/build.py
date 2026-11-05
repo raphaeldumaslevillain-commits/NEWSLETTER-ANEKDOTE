@@ -27,7 +27,7 @@ def card(offer):
     url = escape(contact(offer), quote=True)
     text = {k: escape(v) for k, v in offer.items()}
     return f'''<table role="presentation" class="offer-card" width="268" cellpadding="0" cellspacing="0" style="width:268px;border-collapse:collapse;table-layout:fixed;background-color:#ffffff">
-<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}" target="_blank" style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg?v=photos-20261105" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
+<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}" target="_blank" style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg?v=selection-20261105" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
 <tr><td class="offer-copy" style="padding:22px 22px 0"><p style="margin:0 0 10px;font-size:9px;line-height:15px;letter-spacing:1.3px;color:#686868">{text['category']}</p><h3 style="margin:0 0 9px;font-size:22px;line-height:28px;letter-spacing:-0.6px;font-weight:400;font-family:Georgia,'Times New Roman',serif">{text['name']}</h3><p class="offer-headline" style="margin:0;font-size:15px;line-height:22px;min-height:44px;font-weight:600;letter-spacing:-0.3px">{text['headline']}</p></td></tr>
 <tr><td class="offer-description" height="147" valign="top" style="height:147px;padding:12px 22px 0;vertical-align:top"><p style="margin:0;font-size:13px;line-height:21px;color:#555555">{text['description']}</p></td></tr>
 <tr><td class="offer-copy" style="padding:15px 22px 14px"><p style="margin:0;font-size:10px;line-height:16px;letter-spacing:0.2px;color:#686868">{text['format']}</p></td></tr>
@@ -129,7 +129,7 @@ styled = re.sub(r'<[a-zA-Z][^>]*>', extract_style, body)
 
 def document(markup, email=False):
     head = '<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Anekdote — Les offres du moment</title>\n<meta name="description" content="Maquette de newsletter Anekdote : loges, Cannes, Les Ardentes et GP de Monaco. Offres de démonstration illustrées par des photographies.">\n'
-    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=expertises-20261105">\n'
+    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=logos-20261105">\n'
     return head + '</head>\n<body style="margin:0;padding:0;background-color:#eeeeee;font-family:Arial,sans-serif">\n' + markup + '\n</body>\n</html>\n'
 
 
@@ -159,7 +159,7 @@ def text(markup):
 
 without_new = re.sub(r'<!-- OFFERS(?:-TEASER)?:BEGIN -->.*?<!-- OFFERS(?:-TEASER)?:END -->', '', body, flags=re.S)
 assert text(without_new) == text(BASE), 'Approved editorial text changed'
-assert len(re.findall(r'<img\b', body)) == 12
+assert len(re.findall(r'<img\b', body)) == 14
 assert (ROOT / 'assets/images/peugeot-mondial-auto-2026.jpg').is_file()
 assert len(re.findall(r'<table\b', body)) == len(re.findall(r'</table>', body))
 assert all((ROOT / ('assets/offers/offre-' + o['id'] + '.jpg')).is_file() for o in OFFERS)
@@ -189,7 +189,7 @@ report = {
     'image_file_size_px': [536, 336],
     'button_min_height_px': 48,
     'mobile_single_column_breakpoint_px': 640,
-    'images': 12,
+    'images': 14,
     'cta_destinations': [contact(o) for o in OFFERS],
     'checks': 'Approved editorial text, reading order, five case studies, seven expertises, booking link, balanced tables, assets and distinct offer links verified during build.',
     'sha256': {f: hashlib.sha256((ROOT / f).read_bytes()).hexdigest() for f in ('index.html', 'styles.css', 'newsletter.html')},

@@ -31,7 +31,7 @@
   ],
   "button_min_height_px": 48,
   "mobile_single_column_breakpoint_px": 640,
-  "images": 12,
+  "images": 14,
   "cta_destinations": [
     "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=loges",
     "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=cannes",
@@ -40,8 +40,8 @@
   ],
   "checks": "Approved editorial text, reading order, five case studies, seven expertises, booking link, balanced tables, assets and distinct offer links verified during build.",
   "sha256": {
-    "index.html": "fce0c96955e85eabcad636fd0886d1a438d228e3dada1a16cd84ad91efac6633",
-    "styles.css": "1a75221ca2cc5255b388758155340134b75cd0d1cae5645cb1e5ff637fedab8e",
-    "newsletter.html": "c5ce20001d5e0f3e5a1f1d6aed5f0d80a14dea4824cf86bd92f9fbd1c724e00c"
+    "index.html": "020273a76bd834820eed0fdba31de78ae6490fbe19111496c8b8f06578743c64",
+    "styles.css": "f13138c16daea590fca799413544d596427e157ed63465e12f3d330e8d03e607",
+    "newsletter.html": "ca624bc00881cdb8dd6d5a027854e2b98a95b0faa61d10d4e73b9c4918b6145f"
   }
 }

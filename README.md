@@ -30,12 +30,12 @@ Références de conception : [boutons HTML et libellés explicites — Mailchimp
 
 ## Photos et licences
 
-Les quatre photographies ont été recadrées et redimensionnées pour les cartes. Les versions recadrées sont distribuées sous les mêmes licences que les originaux.
+Les photographies ont été recadrées et redimensionnées pour les cartes.
 
-- **Offres loges** — Jon144k, [vue depuis une loge du PNC Park](https://commons.wikimedia.org/wiki/File:Pnc_park_luxury_box.jpg), domaine public.
-- **Cannes** — GabboT, [Cannes 004, préparation du tapis rouge en 2016](https://commons.wikimedia.org/wiki/File:Cannes_004_(27828731610).jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
-- **Les Ardentes** — Jean-Philippe Bonhomme (JPB.), [Vald sur la scène Wallifornia Beach, Les Ardentes 2019](https://commons.wikimedia.org/wiki/File:Vald_en_live_sur_la_sc%C3%A8ne_Wallifornia_Beach_(Les_Ardentes).jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-- **GP de Monaco** — Gabriel Hutchinson Photography, [Monaco F1 2023](https://commons.wikimedia.org/wiki/File:Monaco_F1_2023.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **Offres loges** — [Loge du concert d’Aya Nakamura, projet Anekdote](https://www.anekdote.fr/projets/concert-aya-nakamura-x-ghd-x-juliette-has-a-gun/).
+- **Cannes** — [Photographie de la villa, médiathèque de DBM Group](https://digitalbrandmakers-group.com/wp-content/uploads/2025/11/Rectangle-3.png).
+- **Les Ardentes** — Jean-Philippe Bonhomme (JPB.), [Vald sur la scène Wallifornia Beach, Les Ardentes 2019](https://commons.wikimedia.org/wiki/File:Vald_en_live_sur_la_sc%C3%A8ne_Wallifornia_Beach_(Les_Ardentes).jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Le recadrage est distribué sous la même licence.
+- **GP de Monaco** — visuel fourni pour la newsletter, recadré hors de l’encart.
 
 ## Base éditoriale et retours
 
