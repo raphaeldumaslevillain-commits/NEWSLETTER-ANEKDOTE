@@ -40,8 +40,8 @@
   ],
   "checks": "Approved editorial text, reading order, five case studies, seven expertises, booking link, balanced tables, assets and distinct offer links verified during build.",
   "sha256": {
-    "index.html": "cd2c4e5f49bf9755ea39bea3050aa74e119799cc99bc2c132eed175f6cb52cc6",
+    "index.html": "1e61096f51da6a6a884e304a4df2945f0e057b8ab1cc38ed561425b119fb93ab",
     "styles.css": "1a75221ca2cc5255b388758155340134b75cd0d1cae5645cb1e5ff637fedab8e",
-    "newsletter.html": "ff1cf8ffe7895f0c4dde8160d248464e4d5b431c1d9fee994eb55c17217fa882"
+    "newsletter.html": "cf48835b4cb954174b892ce5b1692c0a924819cbec2405dc62eb5960698c3e36"
   }
 }
