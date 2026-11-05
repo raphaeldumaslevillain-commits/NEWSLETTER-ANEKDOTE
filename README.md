@@ -19,7 +19,7 @@ Après une modification : `python3 scripts/build.py`. Pour un aperçu local : `p
 
 ## Placement et conversion
 
-Le parcours présente d’abord les **quatre réalisations** (loge, Cannes, Roland-Garros, Yves Rocher), puis **« Et pour votre marque ? » et les six offres**, et enfin **les quatre offres du moment**, avant la prise de contact finale. La loge apparaît uniquement dans les offres du moment. Les cartes indiquent un format sur mesure, sans nombre d’invités imposé. Ce choix de présentation n’est pas présenté comme un gain de conversion mesuré.
+Le parcours présente d’abord les **cinq réalisations** (loge, Cannes, Roland-Garros, Yves Rocher, Peugeot), puis **« Et pour votre marque ? »**, les sept expertises et le lien de rendez-vous, et enfin **les quatre offres du moment**, avant la prise de contact finale. La loge apparaît uniquement dans les offres du moment. Les cartes indiquent un format sur mesure, sans nombre d’invités imposé. Ce choix de présentation n’est pas présenté comme un gain de conversion mesuré.
 
 La grille conserve la composition de 640 px et les marges de 40 px de la newsletter. Sur ordinateur, chaque carte mesure 268 px de large, avec un visuel de 268 × 168 px et un intervalle de 24 px. Les quatre visuels sont en couleur et exportés à 536 × 336 px pour les écrans denses. Les boutons HTML contrastés mesurent 48 px de haut et ne dépendent pas du chargement des images.
 
@@ -31,7 +31,7 @@ Références de conception : [boutons HTML et libellés explicites — Mailchimp
 
 ## Base éditoriale et retours
 
-Les quatre études de cas conservent les textes, chiffres et images du mail corrigé du 10 septembre 2026, transféré le 29 octobre. La mise à jour éditoriale du 2 novembre intègre les textes demandés pour le conseil en stratégie et l’événementiel, le passage à six offres sans doublon loge, et « Nous serions ravis » dans la conclusion. Le générateur vérifie le parcours et la préservation de cette trame éditoriale lors de l’insertion des cartes.
+La mise à jour du 5 novembre 2026 ajoute Peugeot au Mondial de l’Auto, précise le contexte du dîner Big Média à Cannes et présente les sept expertises pour 2027. Le générateur vérifie l’ordre de lecture et le lien de rendez-vous avant l’insertion des offres.
 
 « Voir cet email dans votre navigateur » mène maintenant à GitHub Pages. Le lien de désinscription reste sans destination, comme dans la source ; le lien Roland-Garros conserve `/projets/__trashed/`. Ces deux points devront être renseignés ou validés avant un véritable envoi.
 

@@ -65,11 +65,8 @@ def add_mobile_classes(match):
         classes.append('email-image')
     if tag.startswith('<td') and re.search(r'padding:[^";]*\b40px', tag):
         classes.append('email-pad')
-    # Original service cards also stack, so they cannot force the page to 640px.
     if tag.startswith('<table') and re.search(r'width:(560|268|232)px', tag):
         classes.append('email-fluid')
-    if tag.startswith('<td') and 'width:268px' in tag:
-        classes.append('service-column')
     if classes:
         existing = re.search(r'class="([^"]*)"', tag)
         if existing:
@@ -96,11 +93,6 @@ a:focus-visible { outline: 2px solid #777; outline-offset: 4px; }
   .email-image { width:100% !important; height:auto !important; }
   .email-pad { padding-left:24px !important; padding-right:24px !important; }
   .email-fluid, .offer-grid { width:100% !important; max-width:100% !important; }
-  .service-column { display:block !important; width:100% !important; padding-left:0 !important; padding-right:0 !important; }
-  .service-column table[height], .service-column td[height] { height:auto !important; }
-  .service-column td[height="32"] { padding-bottom:16px !important; }
-  .service-column td[height="56"] { padding-bottom:12px !important; }
-  .service-column td[height="200"] { padding-top:12px !important; padding-bottom:20px !important; }
   .offer-column { display:block !important; width:100% !important; padding-bottom:20px !important; }
   .offer-gap { display:none !important; }
   .offer-card { width:100% !important; }
@@ -136,7 +128,7 @@ styled = re.sub(r'<[a-zA-Z][^>]*>', extract_style, body)
 
 def document(markup, email=False):
     head = '<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Anekdote — Les offres du moment</title>\n<meta name="description" content="Maquette de newsletter Anekdote : loges, Cannes, Les Ardentes et GP de Monaco. Offres et visuels fictifs.">\n'
-    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=retours-20261102">\n'
+    head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=expertises-20261105">\n'
     return head + '</head>\n<body style="margin:0;padding:0;background-color:#eeeeee;font-family:Arial,sans-serif">\n' + markup + '\n</body>\n</html>\n'
 
 
@@ -166,22 +158,26 @@ def text(markup):
 
 without_new = re.sub(r'<!-- OFFERS(?:-TEASER)?:BEGIN -->.*?<!-- OFFERS(?:-TEASER)?:END -->', '', body, flags=re.S)
 assert text(without_new) == text(BASE), 'Approved editorial text changed'
-assert len(re.findall(r'<img\b', body)) == 11
+assert len(re.findall(r'<img\b', body)) == 12
+assert (ROOT / 'assets/images/peugeot-mondial-auto-2026.jpg').is_file()
 assert len(re.findall(r'<table\b', body)) == len(re.findall(r'</table>', body))
 assert all((ROOT / ('assets/offers/offre-' + o['id'] + '.jpg')).is_file() for o in OFFERS)
 assert len({contact(o) for o in OFFERS}) == 4
 assert body.index('GHD × Juliette Has a Gun') < body.index('Et pour<br>votre marque ?') < body.index('id="offres-du-moment"') < body.index('LA SUITE, AVEC VOUS')
-assert 'sept offres' not in body and 'nos six offres' in body
+assert body.index('Émotions à la française.</h2>') < body.index('Et pour<br>votre marque ?')
+assert 'cinq projets qui nous tiennent à cœur' in body
+assert body.count('class="expertise ') == 7 and 'Voici sept expertises' in body
+assert body.index('Programme ambassadeurs</h3>') < body.index('mailto:Christelle.egron@dbmgroup.fr') < body.index('id="offres-du-moment"')
 assert 'L’OFFRE LOGE' not in body and 'Pack exemple' not in body
 assert body.count('Votre marque aux premières loges.') == 1
 assert 'Nous serions ravis' in body and 'Nous serons ravis' not in body
 
 report = {
-    'version': 'retours-editoriaux-2026-11-02',
+    'version': 'retours-editoriaux-2026-11-05',
     'approved_editorial_text_preserved': True,
-    'original_case_studies_preserved': True,
-    'expertises_count': 6,
-    'reading_order': ['case-studies', 'expertises', 'offers', 'conclusion'],
+    'case_studies_count': 5,
+    'expertises_count': 7,
+    'reading_order': ['case-studies', 'expertises', 'booking', 'offers', 'conclusion'],
     'offer_images': 'full-color',
     'fixed_guest_counts': False,
     'offers': [o['id'] for o in OFFERS],
@@ -192,9 +188,9 @@ report = {
     'image_file_size_px': [536, 336],
     'button_min_height_px': 48,
     'mobile_single_column_breakpoint_px': 640,
-    'images': 11,
+    'images': 12,
     'cta_destinations': [contact(o) for o in OFFERS],
-    'checks': 'Approved editorial text, reading order, six expertises, balanced tables, assets and distinct offer links verified during build.',
+    'checks': 'Approved editorial text, reading order, five case studies, seven expertises, booking link, balanced tables, assets and distinct offer links verified during build.',
     'sha256': {f: hashlib.sha256((ROOT / f).read_bytes()).hexdigest() for f in ('index.html', 'styles.css', 'newsletter.html')},
 }
 (ROOT / 'verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
