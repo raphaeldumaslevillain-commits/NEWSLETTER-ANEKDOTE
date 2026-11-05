@@ -2,7 +2,7 @@
 
 Version de démonstration de la newsletter d’origine, enrichie de quatre offres fictives : **Offres loges, Cannes, Les Ardentes, GP de Monaco**.
 
-**Les prestations et images des quatre offres sont fictives.** Ils servent à présenter la mise en page. Aucune disponibilité, date, affiliation officielle ou prestation réelle n’est annoncée. Les visuels d’ambiance ont été générés avec ImageGen, puis exportés au format JPEG pour la newsletter.
+Les quatre offres sont des exemples de présentation. Des photographies documentaires illustrent leurs lieux et leurs ambiances.
 
 ## Voir et modifier
 
@@ -13,7 +13,6 @@ Version de démonstration de la newsletter d’origine, enrichie de quatre offre
 - `templates/newsletter-base.html` : trame éditoriale mise à jour selon les retours, isolée des signatures et du fil de discussion.
 - `scripts/build.py` : génération des deux éditions, sans dépendance.
 - `verification.json` : dimensions, liens et contrôles de construction.
-- `assets/offers/image-prompts.json` : prompts des quatre visuels ImageGen.
 
 Après une modification : `python3 scripts/build.py`. Pour un aperçu local : `python3 -m http.server 8000`.
 
@@ -28,6 +27,15 @@ La grille conserve la composition de 640 px et les marges de 40 px de la newslet
 Chaque offre pointe vers le formulaire de contact Anekdote, avec un paramètre `utm_content` distinct. Ces paramètres identifient l’offre dans un outil de mesure compatible ; ils n’installent pas à eux seuls un système de statistiques. Aucun formulaire ni email n’est envoyé automatiquement.
 
 Références de conception : [boutons HTML et libellés explicites — Mailchimp](https://templates.mailchimp.com/design/calls-to-action/), [lisibilité et boutons sur mobile — Mailchimp](https://templates.mailchimp.com/design/mobile-friendliness/).
+
+## Photos et licences
+
+Les quatre photographies ont été recadrées et redimensionnées pour les cartes. Les versions recadrées sont distribuées sous les mêmes licences que les originaux.
+
+- **Offres loges** — Jon144k, [vue depuis une loge du PNC Park](https://commons.wikimedia.org/wiki/File:Pnc_park_luxury_box.jpg), domaine public.
+- **Cannes** — GabboT, [Cannes 004, préparation du tapis rouge en 2016](https://commons.wikimedia.org/wiki/File:Cannes_004_(27828731610).jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+- **Les Ardentes** — Jean-Philippe Bonhomme (JPB.), [Vald sur la scène Wallifornia Beach, Les Ardentes 2019](https://commons.wikimedia.org/wiki/File:Vald_en_live_sur_la_sc%C3%A8ne_Wallifornia_Beach_(Les_Ardentes).jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **GP de Monaco** — Gabriel Hutchinson Photography, [Monaco F1 2023](https://commons.wikimedia.org/wiki/File:Monaco_F1_2023.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Base éditoriale et retours
 

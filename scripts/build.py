@@ -27,7 +27,7 @@ def card(offer):
     url = escape(contact(offer), quote=True)
     text = {k: escape(v) for k, v in offer.items()}
     return f'''<table role="presentation" class="offer-card" width="268" cellpadding="0" cellspacing="0" style="width:268px;border-collapse:collapse;table-layout:fixed;background-color:#ffffff">
-<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}" target="_blank" style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg?v=couleur-20261102" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
+<tbody><tr><td style="padding:0;font-size:0;line-height:0"><a href="{url}" target="_blank" style="color:#171717;text-decoration:none"><img src="assets/offers/offre-{text['id']}.jpg?v=photos-20261105" width="268" height="168" alt="{text['alt']}" class="offer-image" style="display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover"></a></td></tr>
 <tr><td class="offer-copy" style="padding:22px 22px 0"><p style="margin:0 0 10px;font-size:9px;line-height:15px;letter-spacing:1.3px;color:#686868">{text['category']}</p><h3 style="margin:0 0 9px;font-size:22px;line-height:28px;letter-spacing:-0.6px;font-weight:400;font-family:Georgia,'Times New Roman',serif">{text['name']}</h3><p class="offer-headline" style="margin:0;font-size:15px;line-height:22px;min-height:44px;font-weight:600;letter-spacing:-0.3px">{text['headline']}</p></td></tr>
 <tr><td class="offer-description" height="147" valign="top" style="height:147px;padding:12px 22px 0;vertical-align:top"><p style="margin:0;font-size:13px;line-height:21px;color:#555555">{text['description']}</p></td></tr>
 <tr><td class="offer-copy" style="padding:15px 22px 14px"><p style="margin:0;font-size:10px;line-height:16px;letter-spacing:0.2px;color:#686868">{text['format']}</p></td></tr>
@@ -49,6 +49,7 @@ def offers_section():
 <p style="margin:0 0 28px;font-size:14px;line-height:23px;color:#4a4a4a">Quatre temps forts pour créer la rencontre.<br>Choisissez le vôtre, on imagine la suite ensemble.</p>
 <table role="presentation" class="offer-grid" width="560" cellpadding="0" cellspacing="0" style="width:560px;border-collapse:collapse;table-layout:fixed"><tbody>''' + ''.join(rows) + '''</tbody></table>
 <p style="margin:0 0 10px;font-size:12px;line-height:20px;color:#555555">Une autre idée en tête ? <a href="https://www.anekdote.fr/contact/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=offres-du-moment-demo&amp;utm_content=sur-mesure" target="_blank" style="color:#171717;text-decoration:underline">Parlons de votre projet ↗</a></p>
+<p style="margin:0 0 10px;font-size:11px;line-height:18px;color:#555555">Photos d’illustration · <a href="https://github.com/raphaeldumaslevillain-commits/NEWSLETTER-ANEKDOTE#photos-et-licences" target="_blank" style="color:#555555;text-decoration:underline">Crédits photo</a></p>
 </td></tr>
 <!-- OFFERS:END -->'''
 
@@ -127,7 +128,7 @@ styled = re.sub(r'<[a-zA-Z][^>]*>', extract_style, body)
 
 
 def document(markup, email=False):
-    head = '<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Anekdote — Les offres du moment</title>\n<meta name="description" content="Maquette de newsletter Anekdote : loges, Cannes, Les Ardentes et GP de Monaco. Offres et visuels fictifs.">\n'
+    head = '<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Anekdote — Les offres du moment</title>\n<meta name="description" content="Maquette de newsletter Anekdote : loges, Cannes, Les Ardentes et GP de Monaco. Offres de démonstration illustrées par des photographies.">\n'
     head += '<style>' + MOBILE + '</style>\n' if email else '<link rel="stylesheet" href="styles.css?v=expertises-20261105">\n'
     return head + '</head>\n<body style="margin:0;padding:0;background-color:#eeeeee;font-family:Arial,sans-serif">\n' + markup + '\n</body>\n</html>\n'
 
@@ -178,7 +179,7 @@ report = {
     'case_studies_count': 5,
     'expertises_count': 7,
     'reading_order': ['case-studies', 'expertises', 'booking', 'offers', 'conclusion'],
-    'offer_images': 'full-color',
+    'offer_images': 'full-color photographs',
     'fixed_guest_counts': False,
     'offers': [o['id'] for o in OFFERS],
     'fictional_content_labeled': False,
