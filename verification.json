@@ -19,18 +19,18 @@
     "monaco"
   ],
   "fictional_content_labeled": false,
-  "width_px": 640,
-  "desktop_card_width_px": 268,
+  "width_px": 600,
+  "desktop_card_width_px": 248,
   "image_render_size_px": [
-    268,
-    168
+    248,
+    155
   ],
   "image_file_size_px": [
     536,
     336
   ],
   "button_min_height_px": 48,
-  "mobile_single_column_breakpoint_px": 640,
+  "mobile_single_column_breakpoint_px": 600,
   "images": 14,
   "cta_destinations": [
     "https://www.anekdote.fr/contact/?utm_source=newsletter&utm_medium=email&utm_campaign=offres-du-moment-demo&utm_content=loges",
@@ -40,8 +40,8 @@
   ],
   "checks": "Approved editorial text, reading order, five case studies, seven expertises, booking link, balanced tables, assets and distinct offer links verified during build.",
   "sha256": {
-    "index.html": "7bb4644a486b4fbd71b8f9f5285cf4ec84caf5fa5d94d87189606fa10ea115b4",
-    "styles.css": "f13138c16daea590fca799413544d596427e157ed63465e12f3d330e8d03e607",
-    "newsletter.html": "60e92cdba06b04f1fb8ced4c8a59c43da371c810142ccc4c6b05465fcebb9890"
+    "index.html": "31af759ddf7569177f3a770dca7904085822d58b0ef15de16f78d8eaf879a1f5",
+    "styles.css": "bea91394bb9872fd35e3228e2bd54803fb898d1501a6e01e15ff8f804e0357a8",
+    "newsletter.html": "0b0fbbdfee40f092fa7af451ba41cafce7480bf4de163ea827e10a747dc2cf57"
   }
 }

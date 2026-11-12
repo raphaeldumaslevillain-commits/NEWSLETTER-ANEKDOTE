@@ -3,7 +3,7 @@ html { background:#eee; }
 body { margin:0;padding:0;background:#eee;font-family:Arial,sans-serif; }
 .nl-001 { border-collapse:collapse;color:rgb(23,23,23);background-color:rgb(238,238,238) }
 .nl-002 { font-family:Montserrat,Arial,Helvetica,sans-serif }
-.nl-003 { border-collapse:collapse;width:640px;max-width:640px }
+.nl-003 { border-collapse:collapse;width:600px;max-width:600px }
 .nl-004 { padding:17px 16px;font-size:11px;line-height:18px;color:rgb(102,102,102) }
 .nl-005 { color:rgb(102,102,102);text-decoration-line:underline }
 .nl-006 { padding:30px 40px;border-bottom:1px solid rgb(216,216,216) }
@@ -17,7 +17,7 @@ body { margin:0;padding:0;background:#eee;font-family:Arial,sans-serif; }
 .nl-014 { width:100%;border-collapse:collapse }
 .nl-015 { font-size:10px;line-height:18px;letter-spacing:1.1px;color:#ffffff }
 .nl-016 { padding:0px;font-size:0px;line-height:0 }
-.nl-017 { border:0px;outline:medium;display:block;width:640px;max-width:640px;height:auto }
+.nl-017 { border:0px;outline:medium;display:block;width:600px;max-width:600px;height:auto }
 .nl-018 { background-color:rgb(23,23,23);padding:42px 40px 44px;border-bottom:1px solid rgb(216,216,216) }
 .nl-019 { margin:0px;color:rgb(255,255,255);font-size:11px;line-height:18px;letter-spacing:2px }
 .nl-020 { margin:22px 0px 25px;color:rgb(255,255,255);font-size:44px;line-height:49px;letter-spacing:-1.5px;font-family:Georgia,"Times New Roman",serif;font-weight:400 }
@@ -30,7 +30,7 @@ body { margin:0;padding:0;background:#eee;font-family:Arial,sans-serif; }
 .nl-027 { margin:8px 0px 0px;font-size:13px;line-height:20px;letter-spacing:0px;color:rgb(85,85,85) }
 .nl-028 { margin:5px 0px 0px;font-size:29px;line-height:35px;letter-spacing:-1px;font-family:Georgia,"Times New Roman",serif;font-weight:400 }
 .nl-029 { color:inherit }
-.nl-030 { border:0px;outline:medium;display:block;width:640px;max-width:640px;height:auto;background:0% 0% repeat rgb(222,222,222);font-size:16px }
+.nl-030 { border:0px;outline:medium;display:block;width:600px;max-width:600px;height:auto;background:0% 0% repeat rgb(222,222,222);font-size:16px }
 .nl-031 { padding:23px 40px 30px;border-bottom:1px solid rgb(221,221,221) }
 .nl-032 { margin:0px;font-size:15px;line-height:25px;color:rgb(74,74,74) }
 .nl-033 { border-collapse:collapse;margin-top:23px;margin-bottom:20px }
@@ -39,7 +39,7 @@ body { margin:0;padding:0;background:#eee;font-family:Arial,sans-serif; }
 .nl-036 { margin:0px;font-size:12px;line-height:18px;color:rgb(102,102,102) }
 .nl-037 { color:rgb(23,23,23);font-size:14px;line-height:24px }
 .nl-038 { margin:20px 0px;font-size:13px;line-height:20px }
-.nl-039 { border:0px;display:block;width:640px;max-width:640px;height:auto }
+.nl-039 { border:0px;display:block;width:600px;max-width:600px;height:auto }
 .nl-040 { margin:0px;font-size:15px;line-height:25px }
 .nl-041 { padding:38px 40px 26px }
 .nl-042 { margin:0px 0px 16px;font-size:34px;line-height:39px;letter-spacing:-1px;font-family:Georgia,"Times New Roman",serif;font-weight:400 }
@@ -60,12 +60,12 @@ body { margin:0;padding:0;background:#eee;font-family:Arial,sans-serif; }
 .nl-057 { margin:0 0 14px;font-size:10px;line-height:17px;letter-spacing:1.8px;color:#555555 }
 .nl-058 { margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:38px;line-height:42px;font-weight:400;letter-spacing:-1px }
 .nl-059 { margin:0 0 28px;font-size:14px;line-height:23px;color:#4a4a4a }
-.nl-060 { width:560px;border-collapse:collapse;table-layout:fixed }
-.nl-061 { width:268px;vertical-align:top;padding:0 0 24px }
-.nl-062 { width:268px;border-collapse:collapse;table-layout:fixed;background-color:#ffffff }
+.nl-060 { width:520px;border-collapse:collapse;table-layout:fixed }
+.nl-061 { width:248px;vertical-align:top;padding:0 0 24px }
+.nl-062 { width:248px;border-collapse:collapse;table-layout:fixed;background-color:#ffffff }
 .nl-063 { padding:0;font-size:0;line-height:0 }
 .nl-064 { color:#171717;text-decoration:none }
-.nl-065 { display:block;border:0;width:268px;height:168px;max-width:100%;object-fit:cover }
+.nl-065 { display:block;border:0;width:248px;height:155px;max-width:100%;object-fit:cover }
 .nl-066 { padding:22px 22px 0 }
 .nl-067 { margin:0 0 10px;font-size:9px;line-height:15px;letter-spacing:1.3px;color:#686868 }
 .nl-068 { margin:0 0 9px;font-size:22px;line-height:28px;letter-spacing:-0.6px;font-weight:400;font-family:Georgia,'Times New Roman',serif }
@@ -101,8 +101,8 @@ body { margin:0;padding:0;background:#eee;font-family:Arial,sans-serif; }
 .nl-098 { height:28px;font-size:0px;line-height:0 }
 
 a:focus-visible { outline: 2px solid #777; outline-offset: 4px; }
-@media only screen and (max-width: 640px) {
-  .email-wrap { width:100% !important; max-width:640px !important; }
+@media only screen and (max-width: 600px) {
+  .email-wrap { width:100% !important; max-width:600px !important; }
   .email-image { width:100% !important; height:auto !important; }
   .email-pad { padding-left:24px !important; padding-right:24px !important; }
   .email-fluid, .offer-grid { width:100% !important; max-width:100% !important; }

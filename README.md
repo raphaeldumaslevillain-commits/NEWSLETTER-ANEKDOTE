@@ -20,9 +20,9 @@ Après une modification : `python3 scripts/build.py`. Pour un aperçu local : `p
 
 Le parcours présente d’abord les **cinq réalisations** (loge, Cannes, Roland-Garros, Yves Rocher, Peugeot), puis **« Et pour votre marque ? »**, les sept expertises et le lien de rendez-vous, et enfin **les quatre offres du moment**, avant la prise de contact finale. La loge apparaît uniquement dans les offres du moment. Les cartes indiquent un format sur mesure, sans nombre d’invités imposé. Ce choix de présentation n’est pas présenté comme un gain de conversion mesuré.
 
-La grille conserve la composition de 640 px et les marges de 40 px de la newsletter. Sur ordinateur, chaque carte mesure 268 px de large, avec un visuel de 268 × 168 px et un intervalle de 24 px. Les quatre visuels sont en couleur et exportés à 536 × 336 px pour les écrans denses. Les boutons HTML contrastés mesurent 48 px de haut et ne dépendent pas du chargement des images.
+Sur ordinateur, la newsletter mesure 600 px de large, avec des marges intérieures de 40 px. Chaque carte mesure 248 px de large, avec un visuel de 248 × 155 px et un intervalle de 24 px. Les quatre visuels sont en couleur et exportés à 536 × 336 px pour les écrans denses. Les boutons HTML contrastés mesurent 48 px de haut et ne dépendent pas du chargement des images.
 
-À 640 px et en dessous, les cartes s’empilent en une colonne, avec des marges de 24 px, des paragraphes de 16 px et des boutons sur toute la largeur utile de la carte. Le reste de la newsletter s’adapte également pour éviter un défilement horizontal.
+À 600 px et en dessous, les cartes s’empilent en une colonne, avec des marges de 24 px, des paragraphes de 16 px et des boutons sur toute la largeur utile de la carte. Le reste de la newsletter s’adapte également pour éviter un défilement horizontal.
 
 Cannes et le GP de Monaco ouvrent un e-mail à Christelle Egron avec l’objet de l’offre. Les loges et Les Ardentes pointent vers le formulaire de contact Anekdote, avec un paramètre `utm_content` distinct. Ces paramètres identifient l’offre dans un outil de mesure compatible ; ils n’installent pas à eux seuls un système de statistiques. Aucun formulaire ni email n’est envoyé automatiquement.
 
